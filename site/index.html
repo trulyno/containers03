@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totally Serious Website</title>
+    <style>
+        body {
+            font-family: Comic Sans MS, cursive, sans-serif;
+            text-align: center;
+            background-color: #ffcccb;
+        }
+        h1 {
+            color: #ff0000;
+            text-shadow: 3px 3px 0px yellow;
+        }
+        .button {
+            background-color: lime;
+            padding: 15px;
+            font-size: 20px;
+            border: 5px dashed purple;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Most Important Website Ever</h1>
+    <p>Warning: Clicking the button below may result in uncontrollable laughter.</p>
+    <button class="button" onclick="explode()">Click Me If You Dare</button>
+    <p id="message"></p>
+
+    <script>
+        function explode() {
+            document.getElementById("message").innerHTML = "💥 BOOM! Your computer is now 5% funnier!";
+            alert("You have unleashed the humor bomb!");
+        }
+    </script>
+</body>
+</html>
